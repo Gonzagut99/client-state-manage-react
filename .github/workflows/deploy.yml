@@ -8,6 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write  # Necesario para obtener el token OIDC
     steps:
       - name: Checkout
         uses: actions/checkout@v3
