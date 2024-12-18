@@ -1,0 +1,1 @@
+export const emojiMap: {[key:string]:string} =  { hamburguesa: '🍔', pizza: '🍕', sushi: '🍣', sandia: '🍉', manzana: '🍎', limon: '🍋', tomate: '🍅', pepino: '🥒', }
