@@ -25,16 +25,16 @@ createRoot(root!).render(
     <StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />}>
+          <Route path="/client-state-manage-react/" element={<App />}>
             <Route index element={<ReactReduceTodoList />}></Route>
-            <Route path='redux-toolkit' element={<Provider store={store}>
+            <Route path='/client-state-manage-react/redux-toolkit' element={<Provider store={store}>
               <ReduxTodoList />
             </Provider>}></Route>
-            <Route path='zustand' element={<ZustandTodoList />}></Route>
-            <Route path='state-machine' element={
+            <Route path='/client-state-manage-react/zustand' element={<ZustandTodoList />}></Route>
+            <Route path='/client-state-manage-react/state-machine' element={
               <StateMachine />
             }></Route>
-            <Route path='xstate-machine' element={
+            <Route path='/client-state-manage-react/xstate-machine' element={
               < XStateMachine/>
             }></Route>
           </Route>
