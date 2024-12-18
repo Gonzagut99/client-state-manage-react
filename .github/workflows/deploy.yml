@@ -27,15 +27,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Remove CNAME if condition is met
-        run: |
-          if [ "$REMOVE_CNAME" = "true" ]; then
-            echo "Removing CNAME file from build directory..."
-            rm -f ./dist/CNAME
-          fi
-        env:
-          REMOVE_CNAME: ${{ secrets.REMOVE_CNAME }}
-
       - name: Deploy to GitHub Pages
         uses: skywarth/vite-github-pages-deployer@v1.4.0
         with:
